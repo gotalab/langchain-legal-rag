@@ -1,0 +1,16 @@
+llm:
+  provider: "openai"
+  model_name: "gpt-4o"
+  temperature: 0.0
+  model_kwargs:
+    max_tokens: 1000
+
+embedding:
+  provider: "openai"
+  model_name: "text-embedding-3-large"
+
+retriever:
+  chunk_size: 512
+  chunk_overlap: 200
+  k: 3
+  score_threshold: 0.05 
